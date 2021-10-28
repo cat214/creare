@@ -1,0 +1,167 @@
+html {
+    font-family: Noto-serif;
+}
+.top-hero-container  {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ファーストビュー上部 */
+.top-hero-header-container {
+    display: flex;
+    height: 10%;
+}
+
+
+.header-left {
+    width: 20%;
+}
+.logo {
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.header-right {
+    margin-right: 20px;
+    margin-left: auto;
+}
+.nav-list {
+    display: flex;
+    top: 20px;
+    position: relative;
+}
+.nav-list li {
+    padding: 30px;
+    list-style: none;
+}
+
+/* ファーストビュー下部 */
+.top-hero-bottom-container {
+    height: 90%;
+    display: flex;
+}
+.top-hero-left {
+    width: 30%;
+    position: relative;
+}
+.slogan-container {
+    width: 60%;
+    height: 25%;
+    font-size: 50px;
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+}
+.slogan-container > p {
+    margin: 0;
+}
+.slogan-top {
+    height: 50%;
+}
+.slogan-bottom {
+    height: 50%;
+    text-align: right;
+}
+.top-hero-right {
+    width: 70%;
+}
+.entrance {
+    width: 100%;
+    height: 100%;
+}
+
+/* 理念 */
+.top-philosophy-container {
+    height: 100vh;
+    margin-top: 100px;
+}
+.philosophy-headline {
+    text-align: center;
+}
+.philosophy-content-container {
+    height: inherit;
+    margin-top: 100px;
+    position: relative;
+}
+.philosophy-item {
+    height: 150px;
+}
+.philosophy-beauty {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+}
+.philosophy-experience {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+.philosophy-selfesteem {
+    position: absolute;
+    bottom: 20%;
+    left: 48%;
+}
+
+/* メニュー */
+.top-menu-container {
+    height: 100vh;
+}
+.menu-headline {
+    text-align: center;
+}
+.back-woman-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.back-woman {
+    width: 100%;
+    height: 100%;
+}
+
+/* スタッフ */
+.top-staff-container {
+    height: 100vh;
+}
+.staff-headline {
+    text-align: center;
+}
+.staff-content-container {
+    width: 70%;
+    height: 85%;
+    margin: 0 auto;
+}
+.front-man {
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+
+/* アクセス */
+.top-access-container {
+    height: 100vh;
+    width: 50%;
+    margin: 0 auto;
+}
+.access-headline {
+    text-align: center;
+}
+.googlemaps {
+    height: 60%;
+    width: 100%;
+}
+.salon-map {
+    width: 100%;
+    height: 100%;
+    filter: sepia(40%);
+    -webkit-filter: sepia(40%);
+}
+.access-content-container {
+    height: 30%;
+    margin-top: 100px;
+}
+.salon-info-table tr, .salon-info-table td {
+    padding: 10px;
+}
