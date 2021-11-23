@@ -7,23 +7,21 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <div class="main-container">
         <div class="top-hero-container">
             <div class="top-hero-header-container">
                 <div class="header-left">
-                    <div class="logo-container">
-                        <img class="logo" src="creare-american-logo.svg" alt="ロゴ">
-                    </div>
+                    <h1 class="logo">ロゴ</h1>
                 </div>
                 <div class="header-right">
                     <nav class="nav-list">
-                        <li><a class="nav-item" href="">TOP</a></li>
-                        <li><a class="nav-item" href="./philosophy.html">PHILOSOPHY</a></li>
-                        <li><a class="nav-item" href="./menu.html">MENU</a></li>
-                        <li><a class="nav-item" href="./staff.html">STAFF</a></li>
+                        <li>トップ</li>
+                        <li>理念</li>
+                        <li>メニュー</li>
+                        <li>スタッフ</li>
                     </nav>
                 </div>
             </div>
@@ -35,47 +33,28 @@
                     </div>
                 </div>
                 <div class="top-hero-right">
-                    <img class="entrance slide-img" src="img/interior/entrance.jpeg">
-                    <img class="interior slide-img" src="img/interior/room1.jpeg">
-                    <img class="drawer   slide-img" src="img/interior/drawer.jpeg">
+                    <img class="entrance" src="img/interior/entrance.jpeg">
                 </div>
             </div>
         </div>
         <div class="top-philosophy-container">
-            <!-- 有色背景アニメーションいれる -->
             <h1  class="philosophy-headline">philosophy</h1>
-            <div class="philosophy-grid-container">
-                <div class="circle circleone">美を想像する</div>
-                <div class="circle circletwo">体験を創造する</div>
-                <div class="circle circlethree">自信を創造する</div>
+            <div class="philosophy-content-container">
+                <div class="circle"></div><p class="philosophy-beauty philosophy-item">美を想像する</p>
+                <div class="square"></div><p class="philosophy-experience philosophy-item">体験を想像する</p>
+                <div class="triangle"></div><p class="philosophy-selfesteem philosophy-item">自信を想像する</p>
             </div>
-            <!-- <div class="philosophy-content-container">
-                <div class="beauty-circle circle"></div><p class="beauty-text philosophy-text">美を想像する</p>
-                <div class="experience-circle circle"></div><p class="experience-text philosophy-text">体験を想像する</p>
-                <div class="selfesteem-circle circle"></div><p class="selfesteem-text philosophy-text">自信を想像する</p>
-            </div> -->
         </div>
         <div class="top-menu-container">
-            <!-- <h1 class="menu-headline">menu</h1> -->
-            <div class="top-menu-content">
-                <div class="top-menu-left">
-                    <p>メニュー文言</p>
-                </div>
-                <div class="top-menu-right">
-                    <table class="top-menu-table">
-                        <tr><td>◯</td><td>東京都三鷹市1-2-3-4-5-6</td></tr>
-                        <tr><td>◯</td><td>sample@gmail.com</td></tr>
-                        <tr><td>◯</td><td>000 - 12345678</td></tr>
-                        <tr><td>◯</td><td>月 ~ 金 9:00 ~ 18:00</td></tr>
-                        <tr><td>◯</td><td>土 日</td></tr>
-                    </table>
-                </div>
+            <h1 class="menu-headline">menu</h1>
+            <div class="back-woman-container">
+                <img class="back-woman" src="img/back_woman.jpg">
             </div>
         </div>
         <div class="top-staff-container">
             <h1 class="staff-headline">staff</h1>
             <div class="staff-content-container">
-                <img class="front-man" src="img/man_front.jpg">
+                <img class="front-man" src="img/man_front.jpeg">
             </div>
         </div>
         <div class="top-access-container">
@@ -96,5 +75,4 @@
     </div>
 </body>
 <script src="./js/main.js"></script>
-<script src="./js/slide.js"></script>
 </html>
