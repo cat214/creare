@@ -159,6 +159,12 @@ body {
     font-size: 35px;
     color: #F6F3F3;
     background-color: #232323;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+.big-text-beauty {
+    width: 50px;
 }
 .philosophy-headline {
     width: 20%;
@@ -241,6 +247,9 @@ a {
 .salon-info-left {
     margin-right: 25%;
 }
+.footer-logo {
+    width: 200px;
+}
 .open-time {
     margin-top: 65px;
 }
@@ -251,10 +260,10 @@ a {
 .phone-icon {
     width: 50px;
     height: 50px;
-    padding: 20px;
+    padding: 70px 20px 20px 20px;
 }
 .phone-number {
-    padding: 20px;
+    padding: 70px 20px 20px 20px;
 }
 .mail-address-container {
     display: flex;
