@@ -5,94 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>creare</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <div class="main-container">
-        <div class="top-hero-container">
-            <div class="top-hero-header-container">
-                <div class="header-left">
-                    <div class="logo-container">
-                        <img class="logo" src="creare-american-logo.svg" alt="ロゴ">
-                    </div>
+    <div class="content-container">
+        <!-- サイドメニュー -->
+        <!-- <div class="sidemenu-container">
+            <nav>
+                トップへのリンクつきロゴを追加する
+                <li>PHILOSOPHY</li>
+                <li>MENU</li>
+                <li>STAFF</li>
+            </nav>
+        </div> -->
+        <!-- サイドメニュー終了 -->
+        <!--　ファーストビュー -->
+        <div class="firstview-container">
+            <!-- ヘッダー -->
+            <header class="header-container">
+                <div class="logo-container">
+                    <img class="logo" src="img/creare-american-logo.svg" alt="ロゴ">
                 </div>
-                <div class="header-right">
-                    <nav class="nav-list">
-                        <li><a class="nav-item" href="">TOP</a></li>
-                        <li><a class="nav-item" href="./philosophy.html">PHILOSOPHY</a></li>
-                        <li><a class="nav-item" href="./menu.html">MENU</a></li>
-                        <li><a class="nav-item" href="./staff.html">STAFF</a></li>
-                    </nav>
+                <!-- ハンバーガー -->
+                <div class="hamburger-button">
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- ハンバーガー終了 -->
+            </header>
+            <!-- ヘッダー終了 -->
+            <!-- ヒーローイメージ -->
+            <div class="hero-image-container">
+                <img class="hero-image" src="img/interior/entrance.jpeg">
+                <div class="scrolldown"></div>
+            </div>
+            <!-- ヒーローイメージ終了 -->
+        </div>
+        <!-- ファーストビュー終了 -->
+        <!-- 理念 -->
+        <div class="philosophy-container">
+            <div class="circle"></div>
+            <div class="top-message-container">
+                <p>流行、骨格、髪質</p>
+                <p>いくつもの要素によってその人に似合う髪型は変化します</p>
+                <p>だからこそ最適な髪型を柔軟に創造していきたい</p>
+            </div>
+
+            <h2 class="philosophy-headline">philosophy</h2>
+
+            <div class="philosophy-text-container">
+                <div class="text-area">
+                    <p class="philosophy-text"><span class="big-text">美</span>しいを創る</p>
+                    <p>ああああああああああああああああああああああああ</p>
+                    <p>ああああああああああああああああああああああああ</p>
+                    <p>ああああああああああああああああああああああああ</p>
+                </div>
+
+                <div class="text-area">
+                    <p class="philosophy-text"><span class="big-text">自信</span>を創る</p>
+                    <p>ああああああああああああああああああああああああ</p>
+                    <p>ああああああああああああああああああああああああ</p>
+                    <p>ああああああああああああああああああああああああ</p>
+                </div>
+
+                <div class="text-area">
+                    <p class="philosophy-text">また来たい<span class="big-text">体験</span>を想像する</p>
+                    <p>ああああああああああああああああああああああああ</p>
+                    <p>ああああああああああああああああああああああああ</p>
+                    <p>ああああああああああああああああああああああああ</p>
                 </div>
             </div>
-            <div class="top-hero-bottom-container">
-                <div class="top-hero-left">
-                    <div class="slogan-container">
-                        <p class="slogan-top">we create</p>
-                        <p class="slogan-bottom">your beauty</p>
-                    </div>
+
+            <a href="/philosophy">
+                <div class="read-more-button">
+                    READ MORE
                 </div>
-                <div class="top-hero-right">
-                    <img class="entrance slide-img" src="img/interior/entrance.jpeg">
-                    <img class="interior slide-img" src="img/interior/room1.jpeg">
-                    <img class="drawer   slide-img" src="img/interior/drawer.jpeg">
-                </div>
+            </a>
+        </div>
+        <!-- 理念終了 -->
+        <!-- メニューとスタッフ -->
+        <div class="menu-staff-container">
+            <div class="menu-container">
+                <h1>MENU</h1>
+                <p>ああああああああ</p>
+                <p class="link-arrow-left"><img src="img/link-arrow-left.svg"></p>
+            </div>
+            <div class="staff-container">
+                <h1>STAFF</h1>
+                <p>ああああああああ</p>
+                <p class="link-arrow-right"><img src="img/link-arrow-right.svg"></p>
             </div>
         </div>
-        <div class="top-philosophy-container">
-            <!-- 有色背景アニメーションいれる -->
-            <h1  class="philosophy-headline">philosophy</h1>
-            <div class="philosophy-grid-container">
-                <div class="circle circleone">美を想像する</div>
-                <div class="circle circletwo">体験を創造する</div>
-                <div class="circle circlethree">自信を創造する</div>
-            </div>
-            <!-- <div class="philosophy-content-container">
-                <div class="beauty-circle circle"></div><p class="beauty-text philosophy-text">美を想像する</p>
-                <div class="experience-circle circle"></div><p class="experience-text philosophy-text">体験を想像する</p>
-                <div class="selfesteem-circle circle"></div><p class="selfesteem-text philosophy-text">自信を想像する</p>
-            </div> -->
-        </div>
-        <div class="top-menu-container">
-            <!-- <h1 class="menu-headline">menu</h1> -->
-            <div class="top-menu-content">
-                <div class="top-menu-left">
-                    <p>メニュー文言</p>
-                </div>
-                <div class="top-menu-right">
-                    <table class="top-menu-table">
-                        <tr><td>◯</td><td>東京都三鷹市1-2-3-4-5-6</td></tr>
-                        <tr><td>◯</td><td>sample@gmail.com</td></tr>
-                        <tr><td>◯</td><td>000 - 12345678</td></tr>
-                        <tr><td>◯</td><td>月 ~ 金 9:00 ~ 18:00</td></tr>
-                        <tr><td>◯</td><td>土 日</td></tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="top-staff-container">
-            <h1 class="staff-headline">staff</h1>
-            <div class="staff-content-container">
-                <img class="front-man" src="img/man_front.jpg">
-            </div>
-        </div>
-        <div class="top-access-container">
+        <!-- メニューとスタッフ終了 -->
+        <!-- アクセス -->
+        <div class="access-container">
             <h1 class="access-headline">access</h1>
-            <div class="googlemaps">
+            <div class="googlemap">
                 <iframe class="salon-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25925.47145410257!2d139.5572732!3d35.6847838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee21fcec25e3%3A0xf1ac44c8e1352178!2sMitakadai%20Station!5e0!3m2!1sen!2sjp!4v1635394788870!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="access-content-container">
-                <table class="salon-info-table">
-                    <tr><td>◯</td><td>東京都三鷹市1-2-3-4-5-6</td></tr>
-                    <tr><td>◯</td><td>sample@gmail.com</td></tr>
-                    <tr><td>◯</td><td>000 - 12345678</td></tr>
-                    <tr><td>◯</td><td>月 ~ 金 9:00 ~ 18:00</td></tr>
-                    <tr><td>◯</td><td>土 日</td></tr>
-                </table>
+            <div class="access-order-container">
+                <!-- <li><img src="" alt="道順１">道順１</li>
+                <li><img src="" alt="道順２">道順２</li>
+                <li><img src="" alt="道順３">道順３</li> -->
             </div>
         </div>
+        <!-- アクセス終了 -->
+        <!-- フッター -->
+        <footer class="footer-container">
+            <div class="salon-info-container">
+                <div class="salon-info-left">
+                    <p class="adress-number">181 - 0001</p>
+                    <p class="adress">東京都三鷹市1-2-3-4-5-6</p>
+                    <p class="open-time">営業時間　月~金　9:00 ~ 18:00</p>
+                </div>
+                <div class="salon-info-right">
+                    <div class="phone-number-container">
+                        <img class="phone-icon" src="img/tel_icon.png">
+                        <p class="phone-number">000 - 12345678</p>
+                    </div>
+                    <div class="mail-address-container">
+                        <img class="mail-icon" src="img/mail_icon.png">
+                        <p class="mail-address">sample@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- フッター終了 -->
     </div>
 </body>
 <script src="./js/main.js"></script>
