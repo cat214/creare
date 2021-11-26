@@ -13,6 +13,30 @@ body {
 /* コンテントコンテナ終了*/
 
 /* サイドメニュー */
+    .sidemenu-container {
+        position: fixed;
+        width: 400px;
+        height: 100vh;
+        color: #F6F3F3;
+        background-color: #7A7E91;
+        right: -400px;
+        z-index: 2;
+        opacity: 1;
+        transition: .5s;
+    }
+    .open {
+        transform: translateX(-400px);
+        transition: .5s;
+    }
+    .sidemenu-list {
+        padding: 25%;
+    }
+    .sidemenu-list li {
+        padding: 10% 0;
+    }
+    .sidemenu-container li {
+        list-style: none;
+    }
 /* サイドメニュー終了 */
 
 
@@ -43,12 +67,13 @@ body {
             right: 0;
         } */
         .hamburger-button {
-            position: absolute;
+            position: fixed;
             top: 45px;
             right: 40px;
             width: 40px;
             height: 40px;
             cursor: pointer;
+            z-index: 3;
         }
         .hamburger-button span {
             position: absolute;
