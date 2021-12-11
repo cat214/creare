@@ -1,78 +1,188 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>creare</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
-    <div class="main-container">
-        <div class="top-hero-container">
-            <div class="top-hero-header-container">
-                <div class="header-left">
-                    <h1 class="logo">ロゴ</h1>
-                </div>
-                <div class="header-right">
-                    <nav class="nav-list">
-                        <li><a href="">トップ</a></li>
-                        <li><a href="/philosophy.html">理念</a></li>
-                        <li><a href="/menu.html">メニュー</a></li>
-                        <li><a href="/staff.html">スタッフ</a></li>
-                    </nav>
-                </div>
-            </div>
-            <div class="top-hero-bottom-container">
-                <div class="top-hero-left">
-                    <div class="slogan-container">
-                        <p class="slogan-top">we create</p>
-                        <p class="slogan-bottom">your beauty</p>
-                    </div>
-                </div>
-                <div class="top-hero-right">
-                    <img class="entrance" src="img/interior/entrance.jpeg">
-                </div>
-            </div>
+    <div class="content-container">
+        <!-- サイドメニュー -->
+        <div class="sidemenu-container">
+            <nav class="sidemenu-list">
+                <li><a
+                        href="file:///C:/Users/User/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/cat214/creare/index.html">TOP</a>
+                </li>
+                <li><a
+                        href="file:///C:/Users/User/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/cat214/creare/philosophy.html">PHILOSOPHY</a>
+                </li>
+                <li><a
+                        href="file:///C:/Users/User/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/cat214/creare/menu.html">MENU</a>
+                </li>
+                <li><a
+                        href="file:///C:/Users/User/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/cat214/creare/staff.html">STAFF</a>
+                </li>
+            </nav>
         </div>
-        <div class="top-philosophy-container">
-            <h1  class="philosophy-headline">philosophy</h1>
-            <div class="philosophy-content-container">
-                <div class="circle"></div><p class="philosophy-beauty philosophy-item">美を想像する</p>
-                <div class="square"></div><p class="philosophy-experience philosophy-item">体験を想像する</p>
-                <div class="triangle"></div><p class="philosophy-selfesteem philosophy-item">自信を想像する</p>
-            </div>
+        <!-- サイドメニュー終了 -->
+        <!-- トップ -->
+        <!-- ハンバーガー -->
+        <div class="hamburger-button">
+            <span></span>
+            <span></span>
         </div>
-        <div class="top-menu-container">
-            <h1 class="menu-headline">menu</h1>
-            <div class="back-woman-container">
-                <img class="back-woman" src="img/back_woman.jpg">
+        <!-- ハンバーガー終了 -->
+        <h1 class="page-nav-menu">menu</h1>
+        <!-- トップ終了 -->
+        <!-- メニュー -->
+        <div class="menu-table-container">
+            <!-- <h2 class="cut-title title-box">CUT</h2> -->
+            <div class="menu-flex">
+               <img src="./img/cut-price-table.png" width="80%" height="40%">
             </div>
+            <!-- カット -->
+            <h2 class="cut-title title-box">CUT</h2>
+            <div class="menu-flex">
+                <p class="general">一般</p>
+                <p class="general-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="general-price">￥4,750</p>
+            </div>
+            <div class="menu-flex">
+                <p class="teen">中高生</p>
+                <p class="teen-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="teen-price">￥3,500</p>
+            </div>
+            <div class="menu-flex">
+                <p class="kids">子供</p>
+                <p class="kids-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="kids-price">￥2,500</p>
+            </div>
+            <div class="menu-flex">
+                <p class="cut-point">ポイント</p>
+                <p class="cut-point-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="cut-point-price">￥2,500</p>
+            </div>
+            <!-- カット終了 -->
+
+            <!-- カラー -->
+            <!-- <h2 class="color-title title-box">COLOR</h2> -->
+            <div class="menu-flex">
+                <img src="./img/color-price-table.png" width="80%" height="40%">
+             </div>
+            <!-- <div class="menu-flex">
+                <p class="retouch">リタッチ</p>
+                <p class="retouch-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="retouch-price">￥5,000</p>
+            </div>
+            <div class="menu-flex">
+                <p class="full">フル</p>
+                <p class="full-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="full-price">￥6,000</p>
+            </div>
+            <div class="menu-flex">
+                <p class="natural">ナチュラルハーブ</p>
+                <p class="natural-dots">・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="natural-price">￥7,500</p>
+            </div>
+            <div class="menu-flex">
+                <p class="manicure">マニキュア</p>
+                <p class="manicure-dots">・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="manicure-price">￥7,000</p>
+            </div>
+            <div class="menu-flex">
+                <p class="mesh">メッシュ・ウィービング</p>
+                <p class="mesh-dots">・・・・・・・・・・・・・・・・・・・</p>
+                <p class="mesh-price">￥7,000</p>
+            </div> -->
+            <!-- カラー終了 -->
+
+            <!-- パーマ -->
+            <h2 class="perm-title title-box">PERM</h2>
+            <div class="menu-flex">
+                <p class="cosume-curl">コスメカール</p>
+                <p class="cosume-curl-dots">・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="cosume-curl-price">￥6,000</p>
+            </div>
+            <div class="menu-flex">
+                <p class="aircurb">エアカーブ</p>
+                <p class="aircurb-dots">・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="aircurb-price">￥9,000</p>
+            </div>
+            <!-- パーマ終了 -->
+
+            <!-- ストレート -->
+            <h2 class="straight-title title-box">STRAIGHT</h2>
+            <div class="menu-flex">
+                <p class="cosume-straight">コスメストレート
+                <p class="cosume-straight-dots">・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="cosume-straight-price">￥13,000</p>
+            </div>
+            <div class="menu-flex">
+                <p class="hair-straight">縮毛矯正</p>
+                <p class="hair-straight-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="hair-straight-price">￥13,000</p>
+            </div>
+            <div class="menu-flex">
+                <p class="straight-point">ポイント</p>
+                <p class="straight-point-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="straight-point-price">￥9,000</p>
+            </div>
+            <!-- ストレート終了 -->
+
+            <!-- トリートメント -->
+            <h2 class="treatment-title title-box">TREATMENT</h2>
+            <div class="menu-flex">
+                <p class="light">ライト</p>
+                <p class="light-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="light-price">￥2,500</p>
+            </div>
+            <div class="menu-flex">
+                <p class="standard">スタンダード</p>
+                <p class="standard-dots">・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="standard-price">￥3,000</p>
+            </div>
+            <div class="menu-flex">
+                <p class="head-spa">ヘッドスパ</p>
+                <p class="head-spa-dots">・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="head-spa-price">￥3,000</p>
+            </div>
+            <!-- トリートメント終了 -->
+
+            <!-- その他 -->
+            <h2 class="other-title title-box">OTHER</h2>
+            <div class="menu-flex">
+                <p class="shampoo">シャンプー</p>
+                <p class="shampoo-dots">・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="shampoo-price">￥1,000</p>
+            </div>
+            <div class="menu-flex">
+                <p class="blow">ブロー</p>
+                <p class="blow-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="blow-price">￥2,000</p>
+            </div>
+            <div class="menu-flex">
+                <p class="up">アップ</p>
+                <p class="up-dots">・・・・・・・・・・・・・・・・・・・・・・・・・・・</p>
+                <p class="up-price">￥4,000</p>
+            </div>
+            <!-- その他終了 -->
         </div>
-        <div class="top-staff-container">
-            <h1 class="staff-headline">staff</h1>
-            <div class="staff-content-container">
-                <img class="front-man" src="img/man_front.jpeg">
-            </div>
-        </div>
-        <div class="top-access-container">
-            <h1 class="access-headline">access</h1>
-            <div class="googlemaps">
-                <iframe class="salon-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25925.47145410257!2d139.5572732!3d35.6847838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee21fcec25e3%3A0xf1ac44c8e1352178!2sMitakadai%20Station!5e0!3m2!1sen!2sjp!4v1635394788870!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="access-content-container">
-                <table class="salon-info-table">
-                    <tr><td>◯</td><td>東京都三鷹市1-2-3-4-5-6</td></tr>
-                    <tr><td>◯</td><td>sample@gmail.com</td></tr>
-                    <tr><td>◯</td><td>000 - 12345678</td></tr>
-                    <tr><td>◯</td><td>月 ~ 金 9:00 ~ 18:00</td></tr>
-                    <tr><td>◯</td><td>土 日</td></tr>
-                </table>
-            </div>
-        </div>
+    </div>
+    </div>
+    <!-- メニュー終了 -->
     </div>
 </body>
 <script src="./js/main.js"></script>
+<script src="./js/slide.js"></script>
+
 </html>

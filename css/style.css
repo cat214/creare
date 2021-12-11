@@ -14,7 +14,6 @@ body {
     position: absolute;
 }
 /* コンテントコンテナ終了*/
-
 /* サイドメニュー */
     .sidemenu-container {
         position: fixed;
@@ -162,61 +161,53 @@ body {
     /* ヒーローイメージ終了 */
 /* ファーストビュー終了 */
 
-/* 理念 */
-.philosophy-container {
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 15%;
-    margin-bottom: 15%;
-}
+/* トップメッセージ */
 .top-message-container {
     margin: 15% 0;
     font-size: 28px;
     font-family: "a-otf-midashi-go-mb31-pr6n";
     text-align: center;
 }
-.message-one {
-    margin-top: 15%;
-}
-.philosophy-text-container {
-    margin-top: 10%;
-    font-size: 20px;
-}
-.philosophy-headline {
-    width: 20%;
+/* トップメッセージ終了 */
+
+/* 理念 */
+.philosophy-area-container {
+    width: 65%;
+    height: 100vh;
     margin: 0 auto;
-    font-size: 2em;
-    margin-bottom: 10%;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-}
-/* ３つの理念の上下にpaddingつける用クラス */
-.text-area {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-.big-text {
-    font-size: 35px;
+    justify-content: center;
     color: #F6F3F3;
-    display: inline-block;
-    width: 80px;
-    text-align: center;
+    font-size: 35px;
 }
-.big-text-beauty {
-    width: 50px;
-    background-color: #7A7E91;
-}
-.big-text-selfesteem {
-    background-color: #917A7E;
-}
-.big-text-experience {
-    background-color: #7A918D;
+.philosophy-area {
+    width: 50%;
+    height: 50%;
+    font-size: 40px;
+    background-color: #232323;
 }
 .philosophy-text {
-    margin-bottom: 3%
+    padding-top: 25%;
 }
+.beauty-area {
+    width: 50%;
+    height: 50%;
+    background-color: #7A7E91;
+}
+.selfesteem-area {
+    width: 50%;
+    height: 50%;
+    background-color: #917A7E;
+}
+.experience-area {
+    width: 50%;
+    height: 50%;
+    background-color: #7A918D;
+}
+
 .button-area {
     margin-top: 3%;
     margin-bottom: 15%;
