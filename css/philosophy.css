@@ -2,72 +2,59 @@ body {
     background-color: #232323;
     color: #F6F3F3;
 }
+/* ハンバーガー */
+.hamburger-button span {
+    background-color: #F6F3F3;
+}
+/* ハンバーガー終了 */
 /* 理念トップ */
-    /* ハンバーガー */
-    .hamburger-button span {
-        background-color: #F6F3F3;
-    }
-    /* ハンバーガー終了 */
-.page-nav-philosophy {
-    font-size: 20px;
-    text-decoration: underline;
-    text-decoration-color: #7A7E91;
-    text-decoration-thickness: 3px;
-    margin: 3%;
-}
-.philosophy-top-container {
-    display: flex;
-    margin-top: 10%;
-}
-.philosophy-image-container {
-    width: 50%;
-}
 .philosophy-origin-container {
     width: 50%;
     text-align: center;
 }
-.origin-headline {
-    font-size: 30px;
-    margin: 20%;
+.philosophy-title {
+    font-size: 20px;
+    margin: 5%;
+    margin-top: 38%;
+    padding-right: 58%;
+}
+.philosphy-top-headline {
+    font-size: 70px;
+    margin: 10% auto;
+    padding-right: 11%;
+}
+.philosophy-text-second-child {
+    padding-left: 25px;
+}
+.philosophy-text-third-child {
+    padding-left: 38px;
 }
 /* 理念トップ終了 */
+/* 画像 */
+.philosophy-image-container {
+    width: 50%;
+    margin-top: 15%;
+    text-align: right;
+}
+.philosophy-woman {
+    margin-left: 100%;
+}
+.tools-container {
+    text-align: left;
+}
+/* 画像終了 */
 /* 理念詳細 */
-.create-headline {
-    margin: 10% auto;
-    text-align: center;
+.philosophy-container {
+    margin: 20% 0
+}
+.creare-philosophy {
     font-size: 30px;
+    margin: 5% 0;
 }
-.beauty-big-text {
-    width: 180px;
-    height: 170px;
-    font-size: 150px;
-    text-align: center;
-    margin-left: 5%;
-    background-color: #7A7E91;
+.philosophy-content-area {
+    margin: 10% 0 0 10%;
 }
-.beauty-text {
-    margin-left: 5%;
-}
-.selfesteem-big-text {
-    width: 300px;
-    height: 170px;
-    font-size: 150px;
-    text-align: center;
-    margin: 10% 0 0 30%;
-    background-color: #917A7E;
-}
-.selfesteem-text {
-    margin-left: 30%;
-}
-.experience-big-text {
-    width: 300px;
-    height: 170px;
-    font-size: 150px;
-    text-align: center;
-    margin: 10% 0 0 58%;
-    background-color: #7A918D;
-}
-.experience-text {
-    margin-left: 58%;
+.selfesteem-philosophy,.experience-philosophy{
+    margin: 10% 0 0 0;
 }
 /* 理念詳細終了 */
