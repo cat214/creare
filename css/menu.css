@@ -1,246 +1,136 @@
 body {
-    background-color: #F6F3F3;
-    color: #232323;
+    background-color: #232323;
+    color: #EDEAE2;
 }
-/* メニュートップ */
-    .menu-table-container {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .page-nav-menu {
-        font-size: 20px;
-        text-decoration: underline;
-        text-decoration-color: #917A7E;
-        text-decoration-thickness: 3px;
-        margin: 3%;
-    }
-/* メニュートップ終了 */
+/* ハンバーガー */
+.hamburger-button span {
+    background-color: #F6F3F3;
+}
+/* ハンバーガー終了 */
 /* メニュー */
-    /* メニューフレックス */
-    .menu-flex {
-        width: 50%;
-        margin: 0 auto;
-        justify-content: center;
-        display: flex;
-    }
-    /* メニューフレックス終了 */
-    .title-box {
-        background-color: #232323;
-        color: #F6F3F3;
-        margin: 10% auto 5% auto;
+    .menu-title {
+        margin: 10%;
         text-align: center;
     }
-    /* 各タイトルの幅設定 */
-    .cut-title {
-        width: 130px;
+    .menu-subtitle {
+        font-size: 65px;
     }
-    .color-title {
-        width: 180px;
+
+    .menu-content-container {
+        width: 75%;
+        margin: 10% auto;
     }
-    .perm-title {
-        width: 150px;
-    }
-    .straight-title {
-        width: 220px;
-    }
-    .treatment-title {
-        width: 250px;
-    }
-    .other-title {
-        width: 180px;
-    }
-    /* 各タイトルの幅設定 */
+
     /* カット */
-    .general {
-        width: 6%;
+    .menu-cut-container > p {
+        width: 540px;
+        border-bottom: solid;
     }
-    .general-dots {
-        width: 74%;
+    .cut-title {
+        font-size: 65px;
     }
-    .general-price {
-        width: 20%
+    .cut-general-space, .cut-kids-space {
+        margin-right: 400px;
     }
-    .teen {
-        width: 9%;
+    .cut-teen-space {
+        margin-right: 374px;
     }
-    .teen-dots {
-        width: 71%;
+    .cut-point-space {
+        margin-right: 348px;
     }
-    .teen-price {
-        width: 20%;
-    }
-    .kids {
-        width: 6%;
-    }
-    .kids-dots {
-        width: 74%;
-    }
-    .kids-price {
-        width: 20%;
-    }
-    .cut-point {
-        width: 12%;
-    }
-    .cut-point-dots {
-        width: 68%;
-    }
-    .cut-point-price {
-        width: 20%;
-    }
-    /* カット終了 */
+    /* カット */
+
     /* カラー */
-    .retouch {
-        width: 12%;
+    .menu-color-container {
+        margin-top: 10%;
     }
-    .retouch-dots {
-        width: 68%;
+    .menu-color-container > p {
+        width: 600px;
+        border-bottom: solid;
     }
-    .retouch-price {
-        width: 20%
+    .color-retouch-space {
+        margin-right: 400px;
     }
-    .full {
-        width: 6%;
+    .color-full-space {
+        margin-right: 450px;
     }
-    .full-dots {
-        width: 74%;
+    .color-natural-space {
+        margin-right: 301px;
     }
-    .full-price {
-        width: 20%
+    .color-manicure-space {
+        margin-right: 377px;
     }
-    .natural {
-        width: 22%;
-    }
-    .natural-dots {
-        width: 58%;
-    }
-    .natural-price {
-        width: 20%
-    }
-    .manicure {
-        width: 15%;
-    }
-    .manicure-dots {
-        width: 65%;
-    }
-    .manicure-price {
-        width: 20%
-    }
-    .mesh {
-        width: 29%;
-    }
-    .mesh-dots {
-        width: 51%;
-    }
-    .mesh-price {
-        width: 20%
+    .color-mesh-space {
+        margin-right: 228px;
     }
     /* カラー終了 */
     /* パーマ */
-    .cosume-curl {
-        width: 16%;
+    .menu-perm-container {
+        margin-top: 10%;
     }
-    .cosume-curl-dots {
-        width: 64%;
+    .menu-perm-container > p{
+        width: 600px;
+        border-bottom: solid;
     }
-    .cosume-curl-price {
-        width: 20%
+    .perm-cosume-curl-space {
+        margin-right: 347px;
     }
-    .aircurb {
-        width: 14%;
-    }
-    .aircurb-dots {
-        width: 66%;
-    }
-    .aircurb-price {
-        width: 20%
+    .perm-aircurb-space {
+        margin-right: 371px;
     }
     /* パーマ終了 */
     /* ストレート */
-    .cosume-straight {
-        width: 24%;
+    .straight-container {
+        margin-top: 10%;
     }
-    .cosume-straight-dots {
-        width: 56%;
+    .straight-container > p {
+        width: 600px;
+        border-bottom: solid;
     }
-    .cosume-straight-price {
-        width: 20%
+    .straight-cosume-space {
+        margin-right: 295px;
     }
-    .hair-straight {
-        width: 12%;
+    .straight-hair-straight-space {
+        margin-right: 393px;
     }
-    .hair-straight-dots {
-        width: 68%;
-    }
-    .hair-straight-price {
-        width: 20%
-    }
-    .straight-point {
-        width: 12%;
-    }
-    .straight-point-dots {
-        width: 68%;
-    }
-    .straight-point-price {
-        width: 20%
+    .straight-point-space {
+        margin-right: 392px;
     }
     /* ストレート終了 */
     /* トリートメント */
-    .light {
-        width: 9%;
+    .treatment-container {
+        margin-top: 10%;
     }
-    .light-dots {
-        width: 71%;
+    .treatment-container > p {
+        width: 600px;
+        border-bottom: solid;
     }
-    .light-price {
-        width: 20%
+    .treatment-light-space {
+        margin-right: 418px;
     }
-    .standard {
-        width: 16%;
+    .treatment-standard-space {
+        margin-right: 342px;
     }
-    .standard-dots {
-        width: 64%;
-    }
-    .standard-price {
-        width: 20%
-    }
-    .head-spa {
-        width: 15%;
-    }
-    .head-spa-dots {
-        width: 65%;
-    }
-    .head-spa-price {
-        width: 20%
+    .treatment-headspa-space {
+        margin-right: 368px;
     }
     /* トリートメント終了 */
     /* その他 */
-    .shampoo {
-        width: 14%;
+    .other-container {
+        margin-top: 10%;
     }
-    .shampoo-dots {
-        width: 66%;
+    .other-container > p {
+        width: 600px;
+        border-bottom: solid;
     }
-    .shampoo-price {
-        width: 20%
+    .other-shampoo-space {
+        margin-right: 372px;
     }
-    .blow {
-        width: 9%;
+    .other-blow-space {
+        margin-right: 418px;
     }
-    .blow-dots {
-        width: 71%;
-    }
-    .blow-price {
-        width: 20%
-    }
-    .up {
-        width: 9%;
-    }
-    .up-dots {
-        width: 71%;
-    }
-    .up-price {
-        width: 20%
+    .other-up-space {
+        margin-right: 418px;
     }
     /* その他終了 */
 /* メニュー終了 */
-
