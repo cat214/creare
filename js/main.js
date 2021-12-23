@@ -25,28 +25,28 @@ const el = document.querySelector('.circle');
 
 var fadeIn = gsap.timeline();
 
-fadeIn.from('.message-one', {
-    duration: 1,
-    opacity: 0,
-    y: 50,
-    delay: 0.5,
-    scrollTrigger: ".top-message-container",
-})
-fadeIn.from('.message-two', {
-  duration: 1,
-  opacity: 0,
-  y: 50,
-  delay: 0.3,
-  // scrollTrigger: "top-message-container",
-})
+// fadeIn.from('.message-one', {
+//     duration: 1,
+//     opacity: 0,
+//     y: 50,
+//     delay: 0.5,
+//     scrollTrigger: ".top-message-container",
+// })
+// fadeIn.from('.message-two', {
+//   duration: 1,
+//   opacity: 0,
+//   y: 50,
+//   delay: 0.3,
+//   // scrollTrigger: "top-message-container",
+// })
 
-fadeIn.from('.message-three', {
-  duration: 1,
-  opacity: 0,
-  y: 100,
-  delay: 0.3,
-  // scrollTrigger: "top-message-container",
-})
+// fadeIn.from('.message-three', {
+//   duration: 1,
+//   opacity: 0,
+//   y: 100,
+//   delay: 0.3,
+//   // scrollTrigger: "top-message-container",
+// })
 
 
 
