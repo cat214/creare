@@ -23,8 +23,11 @@ body {
 }
 /* ハンバーガー終了 */
 /* メニュー */
+    p {
+        padding: 15px;
+    }
     .menu-title {
-        margin: 10%;
+        margin: 10% 0;
         text-align: center;
     }
     .menu-subtitle {

@@ -116,7 +116,7 @@ body {
             /*描画位置※位置は適宜調整してください*/
             position: absolute;
             right: 2%;
-            top: 34%;
+            top: 23%;
             /*全体の高さ*/
             height: 50px;
         }
@@ -163,11 +163,15 @@ body {
     display: flex;
     /* font-family: "a-otf-midashi-go-mb31-pr6n"; */
 }
-.top-message-right p {
-    margin: 65px 0;
+.cutting-woman {
+    width: 900px;
 }
 .top-message-right {
-    margin: 70px 23%;
+    margin: 180px 20%;
+}
+.top-message-right p {
+    margin: 65px 0;
+    width: 600px;
 }
 .top-message-headline {
     font-size: 35px;
@@ -234,7 +238,7 @@ li {
     margin: 5%;
 }
 .access-logo {
-    width: 150px;
+    width: 180px;
     height: 40px;
 }
 

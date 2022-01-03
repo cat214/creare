@@ -65,6 +65,8 @@ body {
 .creare-philosophy {
     font-size: 30px;
     margin: 5% 0;
+    width: 300px;
+    border-bottom: solid;
 }
 .philosophy-content-area {
     margin: 10% 0 0 10%;
