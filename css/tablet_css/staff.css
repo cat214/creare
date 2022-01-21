@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) { /*ウィンドウ幅が最大1024pxまでの場合に適用*/
+@media screen and (max-width: 1023px) { /*ウィンドウ幅が最大1023pxまでの場合に適用*/
     body {
         background-color: #EDEAE2;
         color: #232323;

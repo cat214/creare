@@ -1,268 +1,267 @@
-
-@media screen and (min-width: 1024px) { /*ウィンドウ幅が1024px以上の場合に適用*/
-    body {
-        background-color: #EDEAE2;
-        color: #2E323B;
-        font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-        font-size: 25px;
-    }
-    ::selection {
-        background: #7A7E91;
-    }
-    /* コンテントコンテナ*/
-    .all-container {
-        width: 100%;
-        /* サイドメニュースライド用 */
-        position: absolute;
-    }
-    /* コンテントコンテナ終了*/
-    /* サイドメニュー */
-        .sidemenu-container {
-            position: fixed;
-            width: 400px;
-            height: 100vh;
-            color: #EDEAE2;
-            background-color: #232323;
-            right: -400px;
-            z-index: 2;
-            opacity: 1;
-            transition: .5s;
-        }
-        .open {
-            transform: translateX(-400px);
-            transition: .5s;
-        }
-        .sidemenu-list {
-            padding: 25%;
-        }
-        .sidemenu-list li {
-            padding: 10% 0;
-            list-style: none;
-        }
-        .sidemenu-list a{
-            color: #EDEAE2;
-            font-size: 30px;
-            text-decoration: none;
-        }
-    /* サイドメニュー終了 */
-
-
-    /* ファーストビュー */
-        /* ヘッダー */
-        .header-container {
-            height: 10%;
-            display: flex;
-        }
-        .logo-container {
-            width: 30%;
-            height: 100px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .logo {
-            width: inherit;
-            height: 65%;
-            margin-top: 0;
-        }
-            .hamburger-button {
-                position: fixed;
-                top: 45px;
-                right: 40px;
-                width: 40px;
-                height: 40px;
-                cursor: pointer;
-                z-index: 3;
-            }
-            .hamburger-button span {
-                position: absolute;
-                left: 0;
-                width: 100%;
-                height: 4px;
-                background-color: #2E323B;
-                border-radius: 4px;
-            }
-            .hamburger-button, .hamburger-button span {
-                display: inline-block;
-                transition: all .5s;
-                box-sizing: border-box;
-            }
-            .hamburger-button span:nth-of-type(1) {
-                top: 0;
-            }
-            .hamburger-button span:nth-of-type(2) {
-                top: 20px;
-            }
-            .hamburger-button.active span:nth-of-type(1) {
-                background-color: #EDEAE2;
-                -webkit-transform: translateY(20px) rotate(-45deg);
-                transform: translateY(20px) rotate(45deg);
-            }
-            .hamburger-button.active span:nth-of-type(2) {
-                background-color: #EDEAE2;
-                -webkit-transform: translateY(-20px) rotate(45deg);
-                transform: rotate(-45deg);
-            }
-            /* ハンバーガー終了 */
-
-        /* ヘッダー終了 */
-        /* ヒーローイメージ */
-        .hero-image-container {
-            text-align: center;
-        }
-        .hero-image {
-            width: 80%;
-        }
-            /* スクロールライン */
-            /*スクロールダウン全体の場所*/
-            .scrolldown{
-                /*描画位置※位置は適宜調整してください*/
-                position: absolute;
-                right: 2%;
-                top: 23%;
-                /*全体の高さ*/
-                height: 50px;
-            }
-
-            /* 線の描写 */
-            .scrolldown::after{
-                content: "";
-                /*描画位置*/
-                position: absolute;
-                top: 0;
-                /*線の形状*/
-                width: 3px;
-                height: 30px;
-                background: #232323;
-                /*線の動き1.4秒かけて動く。永遠にループ*/
-                animation: pathmove 1.4s ease-in-out infinite;
-                opacity:0;
-            }
-
-            /*高さ・位置・透過が変化して線が上から下に動く*/
-            @keyframes pathmove{
-                0%{
-                    height:0;
-                    top:0;
-                    opacity: 0;
-                }
-                30%{
-                    height:30px;
-                    opacity: 1;
-                }
-                100%{
-                    height:0;
-                    top:50px;
-                    opacity: 0;
-                }
-            }
-            /* スクロールライン終了 */
-        /* ヒーローイメージ終了 */
-    /* ファーストビュー終了 */
-
-    /* トップメッセージ */
-    .top-message-container {
-        margin: 15% 0 0 0;
-        display: flex;
-        /* font-family: "a-otf-midashi-go-mb31-pr6n"; */
-    }
-    .cutting-woman {
-        width: 900px;
-    }
-    .top-message-right {
-        margin: 180px 20%;
-    }
-    .top-message-right p {
-        margin: 65px 0;
-        width: 600px;
-    }
-    .top-message-headline {
-        font-size: 35px;
-    }
-    /* トップメッセージ終了 */
-
-
-    /* コンテント */
-    li {
-        list-style-type: none;
-    }
-    .content-container {
-        margin: 5% auto;
-    }
-    .content-title {
-        margin-left: 10%;
-        width: 400px;
-        border-bottom: solid;
-    }
-    /* コンテンツリスト */
-    .content-list {
-        display: flex;
-        text-align: center;
-        padding-left: 160px;
-    }
-    .content-list img {
-        width: 500px;
-        height: 300px;
-        padding: 0 30px;
-    }
-    .content-list img:first-child {
-        /* margin-left: 22%; */
-    }
-    .content-list li {
-        margin-top: 5%;
-    }
-    .content-list p {
-        margin: 20px;
-    }
-    .content-list a {
-        text-decoration: none;
-        color: #232323;
-    }
-    /* コンテンツリスト終了 */
-    /* コンテント終了 */
-
-
-    /* アクセス */
-    .access-container {
-        margin: 10% 0;
-        display: flex;
-        font-size: 20px;
-    }
-    .salon-info-left {
-        width: 50%;
-    }
-    .salon-location-image {
-        width: 900px;
-        height: 600px;
-    }
-
-
-    .salon-info-right {
-        margin: 5%;
-    }
-    .access-logo {
-        width: 180px;
-        height: 40px;
-    }
-
-    .phone-number {
-        margin-top: 50px;
-    }
-
-
-
-    .tel-icon {
-        width: 20px;
-        height: 20px;
-        margin-top: 50px;
-        margin-right: 20px;
-    }
-    .mail-icon {
-        width: 20px;
-        height: 20px;
-        margin-right: 20px;
-    }
-    .open-time {
-        margin-top: 50px;
-    }
-    /* アクセス終了 */
+body {
+    background-color: #EDEAE2;
+    color: #2E323B;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-size: 25px;
 }
+::selection {
+    background: #7A7E91;
+}
+/* コンテントコンテナ*/
+.all-container {
+    width: 100%;
+    /* サイドメニュースライド用 */
+    position: absolute;
+}
+/* コンテントコンテナ終了*/
+/* サイドメニュー */
+    .sidemenu-container {
+        position: fixed;
+        width: 400px;
+        height: 100vh;
+        color: #EDEAE2;
+        background-color: #232323;
+        right: -400px;
+        z-index: 2;
+        opacity: 1;
+        transition: .5s;
+    }
+    .open {
+        transform: translateX(-400px);
+        transition: .5s;
+    }
+    .sidemenu-list {
+        padding: 25%;
+    }
+    .sidemenu-list li {
+        padding: 10% 0;
+        list-style: none;
+    }
+    .sidemenu-list a{
+        color: #EDEAE2;
+        font-size: 30px;
+        text-decoration: none;
+    }
+/* サイドメニュー終了 */
+
+
+/* ファーストビュー */
+    /* ヘッダー */
+    .header-container {
+        height: 10%;
+        display: flex;
+    }
+    .logo-container {
+        width: 30%;
+        height: 100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo {
+        height: 65%;
+        margin-top: 0;
+    }
+        .hamburger-button {
+            position: fixed;
+            top: 45px;
+            right: 40px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 3;
+        }
+        .hamburger-button span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #2E323B;
+            border-radius: 4px;
+        }
+        .hamburger-button, .hamburger-button span {
+            display: inline-block;
+            transition: all .5s;
+            box-sizing: border-box;
+        }
+        .hamburger-button span:nth-of-type(1) {
+            top: 0;
+        }
+        .hamburger-button span:nth-of-type(2) {
+            top: 20px;
+        }
+        .hamburger-button.active span:nth-of-type(1) {
+            background-color: #EDEAE2;
+            -webkit-transform: translateY(20px) rotate(-45deg);
+            transform: translateY(20px) rotate(45deg);
+        }
+        .hamburger-button.active span:nth-of-type(2) {
+            background-color: #EDEAE2;
+            -webkit-transform: translateY(-20px) rotate(45deg);
+            transform: rotate(-45deg);
+        }
+        /* ハンバーガー終了 */
+
+    /* ヘッダー終了 */
+    /* ヒーローイメージ */
+    .hero-image-container {
+        text-align: center;
+    }
+    .hero-image {
+        width: 80%;
+    }
+        /* スクロールライン */
+        /*スクロールダウン全体の場所*/
+        .scrolldown{
+            /*描画位置※位置は適宜調整してください*/
+            position: absolute;
+            right: 2%;
+            top: 23%;
+            /*全体の高さ*/
+            height: 50px;
+        }
+
+        /* 線の描写 */
+        .scrolldown::after{
+            content: "";
+            /*描画位置*/
+            position: absolute;
+            top: 0;
+            /*線の形状*/
+            width: 3px;
+            height: 30px;
+            background: #232323;
+            /*線の動き1.4秒かけて動く。永遠にループ*/
+            animation: pathmove 1.4s ease-in-out infinite;
+            opacity:0;
+        }
+
+        /*高さ・位置・透過が変化して線が上から下に動く*/
+        @keyframes pathmove{
+            0%{
+                height:0;
+                top:0;
+                opacity: 0;
+            }
+            30%{
+                height:30px;
+                opacity: 1;
+            }
+            100%{
+                height:0;
+                top:50px;
+                opacity: 0;
+            }
+        }
+        /* スクロールライン終了 */
+    /* ヒーローイメージ終了 */
+/* ファーストビュー終了 */
+
+/* トップメッセージ */
+.top-message-container {
+    margin: 15% 0 0 0;
+    display: flex;
+    /* font-family: "a-otf-midashi-go-mb31-pr6n"; */
+}
+.cutting-woman {
+    width: 900px;
+}
+.top-message-right {
+    margin: 180px 20%;
+}
+.top-message-right p {
+    margin: 65px 0;
+    width: 600px;
+}
+.top-message-headline {
+    font-size: 35px;
+}
+/* トップメッセージ終了 */
+
+
+/* コンテント */
+li {
+    list-style-type: none;
+}
+.content-container {
+    margin: 5% auto;
+}
+.content-title {
+    margin-left: 5%;
+    width: 400px;
+    border-bottom: solid;
+}
+/* コンテンツリスト */
+.content-list {
+    display: flex;
+    text-align: center;
+}
+.content-list img {
+    /* width: 500px;
+    height: 300px; */
+    width: 100%;
+    height: 80%;
+    padding: 0 30px;
+}
+.content-list img:first-child {
+    /* margin-left: 22%; */
+}
+.content-list li {
+    margin-top: 5%;
+    padding-right: 5%;
+    width: 30%;
+}
+.content-list p {
+    margin: 20px;
+}
+.content-list a {
+    text-decoration: none;
+    color: #232323;
+}
+/* コンテンツリスト終了 */
+/* コンテント終了 */
+
+
+/* アクセス */
+.access-container {
+    margin: 10% 0;
+    display: flex;
+    font-size: 20px;
+}
+.salon-info-left {
+    width: 50%;
+}
+.salon-location-image {
+    width: 900px;
+    height: 600px;
+}
+
+
+.salon-info-right {
+    margin: 5%;
+}
+.access-logo {
+    width: 180px;
+    height: 40px;
+}
+
+.phone-number {
+    margin-top: 50px;
+}
+
+
+
+.tel-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.mail-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.open-time {
+    margin-top: 50px;
+}
+/* アクセス終了 */
