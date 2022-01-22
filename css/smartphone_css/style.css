@@ -9,7 +9,7 @@
         margin: 30% 10%;
     }
 }
-@media screen and (max-width: 599px) { /*ウィンドウ幅が最大599pxまでの場合に適用*/
+@media screen and (max-width: 600px) { /*ウィンドウ幅が最大599pxまでの場合に適用*/
     .hero-image {
         width: 100%;
     }
