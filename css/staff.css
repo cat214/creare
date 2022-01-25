@@ -70,7 +70,7 @@
         margin-right: 150px;
     }
     .takeda {
-        width: 600px;
+        /* width: 600px; */
         height: 450px;
     }
     .takeda-introduction p {
@@ -89,7 +89,7 @@
         margin-left: 150px;
     }
     .fujiwara {
-        width: 684px;
+        /* width: 684px; */
     }
     .fujiwara-name {
         display: flex;
@@ -133,7 +133,7 @@
         margin-right: 150px;
     }
     .hayakawa {
-        width: 100%;
+        /* width: 100%; */
         height: 500px;
     }
     .hayakawa-name p:nth-child(2) {
