@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,AAAC,CACjB,MAAM,CAAE,OAAO,CAAG,AAEpB,AAAA,cAAc,AAAC,CACb,WAAW,CAAE,EAAE,CACf,KAAK,CAAE,KAAK,CACZ,aAAa,CAAE,KAAK,CAAG",
+    "sources": [
+        "Object/Component/c-content-title.sass"
+    ],
+    "names": [],
+    "file": "c-content-title.min.css"
+}

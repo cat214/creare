@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,IAAI,CAAJ,qBAAI,EACJ,IAAI,CAAJ,oBAAI,EACJ,IAAI,CAAJ,oBAAI",
+    "sources": [
+        "common.sass"
+    ],
+    "names": [],
+    "file": "common.min.css"
+}
