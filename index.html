@@ -2,24 +2,25 @@
 <html lang="ja">
 
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <title>creare</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tablet_css/style.css">
-    <link rel="stylesheet" href="css/smartphone_css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+
 </head>
 
 <body>
     <!-- サイドメニュー -->
-    <div class="l-sidemenu-container">
+    <div class="l-sidemenu-wrapper">
         <nav class="l-sidemenu-list">
             <li>
                 <a href="index.html">TOP</a>
@@ -36,32 +37,54 @@
         </nav>
     </div>
     <!-- サイドメニュー終了 -->
+
+
+
+
+    <!-- ハンバーガー -->
+    <div class="l-hamburger-button">
+        <span></span>
+        <span></span>
+    </div>
+    <!-- ハンバーガー終了 -->
+
+
+
     <!-- ヘッダー -->
-    <header class="header-container">
-        <div class="logo-container">
-            <img class="logo" src="img/creare-american-logo.svg" alt="ロゴ">
-        </div>
-        <!-- ハンバーガー -->
-        <div class="hamburger-button">
-            <span></span>
-            <span></span>
-        </div>
-        <!-- ハンバーガー終了 -->
+    <header class="p-header-wrapper">
+        <p class="p-header-logo-wrapper">
+            <img class="p-header-logo" src="img/creare-american-logo.svg" alt="ロゴ">
+        </p>
     </header>
     <!-- ヘッダー終了 -->
+
+
+
+
     <!-- ヒーローイメージ -->
-    <div class="hero-image-container">
-        <img class="hero-image" src="img/interior/entrance.jpeg">
-        <div class="scrolldown"></div>
+    <div class="c-hero-image-wrapper">
+        <img class="c-hero-image" src="img/interior/entrance.jpeg">
     </div>
     <!-- ヒーローイメージ終了 -->
+
+
+
+
+
+    <!-- スクロールライン -->
+    <div class="c-scrollline"></div>
+    <!-- スクロールライン終了 -->
+
+
+
+
     <!-- トップメッセージ -->
-    <div class="top-message-container">
-        <div class="top-massage-left">
-            <img class="cutting-woman" src="img/woman/cutting-woman.jpeg" alt="">
+    <div class="p-top-message-wrapper">
+        <div class="p-top-message-left">
+            <img class="p-top-message-main-image" src="img/woman/cutting-woman.jpeg" alt="">
         </div>
-        <div class="top-message-right">
-            <p class="top-message-headline">あなたらしさを創る</h1>
+        <div class="p-top-message-right">
+            <p class="p-top-message-headline">あなたらしさを創る</h1>
             <p>明るい印象にしたい</p>
             <p>流行りの髪型にしたい</p>
             <p>イメチェンしたい</p>
@@ -70,43 +93,49 @@
         </div>
     </div>
     <!-- トップメッセージ終了 -->
-    <!-- コンテント -->
-    <div class="content-container">
-        <h2 class="content-title">CONTENT</h2>
-        <ul class="content-list">
-            <li>
-                <a href="creare/philosophy.html">
-                    <img src="img/hair_oil.jpeg">
-                    <p>PHILOSOPHY</p>
-                </a>
-            </li>
-            <li>
-                <a href="creare/menu.html">
-                    <img src="img/back_woman.jpeg">
-                    <p id="content-list-menu">MENU</p>
-                </a>
-            </li>
-            <li>
-                <a href="crear/staff.html">
-                    <img src="img/hair_cut.jpeg">
-                    <p id="content-list-staff">STAFF</p>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!-- コンテント終了 -->
+
+
+
+
+    <!-- コンテントリスト -->
+    <h2 class="c-content-title">CONTENT</h2>
+    <ul class="p-content-list">
+        <li>
+            <a href="creare/philosophy.html">
+                <img src="img/hair_oil.jpeg">
+                <p>PHILOSOPHY</p>
+            </a>
+        </li>
+        <li>
+            <a href="creare/menu.html">
+                <img src="img/back_woman.jpeg">
+                <p class="p-content-list-menu">MENU</p>
+            </a>
+        </li>
+        <li>
+            <a href="crear/staff.html">
+                <img src="img/hair_cut.jpeg">
+                <p class="p-content-list-staff">STAFF</p>
+            </a>
+        </li>
+    </ul>
+    <!-- コンテントリスト終了 -->
+
+
+
+
     <!-- アクセス -->
-        <div class="access-container">
-            <div class="salon-info-left">
-                <img class="salon-location-image" src="./img/midakadai_station_location.png">
+        <div class="p-access-wrapper">
+            <div class="p-salon-info-left">
+                <img class="p-salon-location-image" src="./img/midakadai_station_location.png">
             </div>
-            <div class="salon-info-right">
-                <p><img class="access-logo" src="img/creare-american-logo.png" alt=""></p>
-                <p class="phone-number">181 - 0001</p>
+            <div class="p-salon-info-right">
+                <p><img class="p-access-logo" src="img/creare-american-logo.png" alt=""></p>
+                <p class="p-phone-number">181 - 0001</p>
                 <p>東京都三鷹市井の頭1-2-3-4-5-6</p>
-                <p><img class="tel-icon" src="img/tel_icon.png">000 - 12345678</p>
-                <p><img class="mail-icon" src="img/mail_icon.png">sample@gmail.com</p>
-                <p class="open-time">営業時間　月~金　9:00 ~ 18:00</p>
+                <p><img class="p-tel-icon" src="img/tel_icon.png">000 - 12345678</p>
+                <p><img class="p-mail-icon" src="img/mail_icon.png">sample@gmail.com</p>
+                <p class="p-open-time">営業時間　月~金　9:00 ~ 18:00</p>
             </div>
                 <!-- https://mapstyle.withgoogle.com/　が使えるようになったら差し替える -->
             <!-- <iframe class="salon-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25925.47145410257!2d139.5572732!3d35.6847838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee21fcec25e3%3A0xf1ac44c8e1352178!2sMitakadai%20Station!5e0!3m2!1sen!2sjp!4v1635394788870!5m2!1sen!2sjp"

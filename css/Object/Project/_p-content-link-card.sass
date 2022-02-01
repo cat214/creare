@@ -1,25 +1,83 @@
-.content-list
+.p-content-list
   display: flex
   text-align: center
-
-  img
-    /* width: 500px;
-     *height: 300px;
-    width: 100%
-    height: 80%
-    padding: 0 30px
-
-    &:first-child
-      /* margin-left: 22%;
+  margin: 5% 0 20% 0
+  padding-left: 4%
 
   li
-    margin-top: 5%
-    padding-right: 5%
     width: 30%
+    list-style: none
+
+  img
+    width: 80%
+    height: 80%
+    padding: 0 30px
+    position: relative
+
+  img::before
+    content: ""
+    z-index: 0
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background-color: rgba(0,0,0, 0.5)
+
+  &:first-child
+    margin-left: 22%
 
   p
     margin: 20px
 
   a
     text-decoration: none
-    color: #232323
+    color: $main-font-color
+
+@media screen and (max-width: 1024px)
+  .p-content-list
+    display: inline
+    text-align: center
+    padding-left: 160px
+
+  .p-content-list img
+    width: 800px
+    height: 600px
+    padding-left: 34%
+
+
+  .p-content-list li
+    margin-top: 5%
+
+  .p-content-list p
+    margin: 30px 435px
+
+  .p-content-list p:nth-child(1)
+    margin: 20px
+
+  .p-content-list-menu
+    margin: 30px 480px
+
+  .p-content-list-staff
+    margin: 30px 480px
+
+  .p-content-list a
+    text-decoration: none;
+    color: $main-font-color;
+
+@media screen and (max-width: 600px)
+  .p-content-list li
+      margin: 18% 0
+
+  .p-content-list img
+      width: 450px
+      height: 300px
+
+  .p-content-list p
+      margin: 30px 195px
+
+  .p-content-list-menu
+      margin: 30px 245px
+
+  .p-content-list-staff
+      margin: 30px 245px

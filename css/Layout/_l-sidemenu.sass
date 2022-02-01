@@ -1,15 +1,15 @@
-.l-sidemenu-container
+.l-sidemenu-wrapper
   position: fixed
   width: 400px
   height: 100vh
-  color: #EDEAE2
-  background-color: #232323
+  color: $reverse-font-color;
+  background-color: $reverse-background-color;
   right: -400px
   z-index: 2
   opacity: 1
   transition: .5s
 
-.l-sidemenu__open
+.l-sidemenu-wrapper__open
   transform: translateX(-400px)
   transition: .5s
 
@@ -24,3 +24,7 @@
     color: #EDEAE2
     font-size: 30px
     text-decoration: none
+
+.l-sidemenu-list__reverse
+  color: $reverse-font-color;
+  background-color: $reverse-background-color;
